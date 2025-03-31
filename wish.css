@@ -182,7 +182,6 @@ body {
         transform: rotateY(0deg);
     }
 }
-
 @media screen and (max-width: 600px) {
     .memory-header {
         font-size: 28px;
@@ -201,25 +200,17 @@ body {
         margin-top: 25px;
     }
 
-    /* Image & Video Boxes Keep Original Size */
+    /* Reduce the size of image and video boxes for mobile */
     .image-box, .video-box {
-        width: 250px;
-        height: 1000px;
-        margin-bottom: 15px;
-        background-color: #ff80bf;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        position: relative;
-        cursor: pointer;
-        overflow: hidden;
+        width: 150px;  /* Decrease width */
+        height: 180px; /* Decrease height */
+        margin-bottom: 10px;
     }
 
     .image-message, .video-message {
         font-size: 12px;
     }
+    
     .image-box:hover .image-message,
     .video-box:hover .video-message {
         display: block;
@@ -227,6 +218,7 @@ body {
         width: 100%;
         opacity: 1;
     }
+    
     .buttons {
         gap: 10px;
         margin-top: 50px;
@@ -237,3 +229,4 @@ body {
         padding: 6px 12px;
     }
 }
+
