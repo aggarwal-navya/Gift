@@ -183,12 +183,7 @@ body {
     }
 }
 @media screen and (max-width: 600px) {
-    body {
-        height: 250vh; /* Reduce overall page height */
-        width: 100vw;  /* Ensure it fits within the viewport width */
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-
+   
     .memory-header {
         font-size: 28px;
         margin-top: 5px;
